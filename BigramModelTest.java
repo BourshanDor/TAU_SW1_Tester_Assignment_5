@@ -134,9 +134,8 @@ class BigramModelTest {
                 () -> assertEquals("a" , test.getMostFrequentProceeding("a")),
                 () -> assertEquals("h" , test.getMostFrequentProceeding("g")),
                 () -> assertEquals(null , test.getMostFrequentProceeding("a,")),
-                () -> assertEquals(null , test.getMostFrequentProceeding("$$$1a")),
-                () -> assertEquals(null , test.getMostFrequentProceeding("1"))
-
+                () -> assertEquals(null , test.getMostFrequentProceeding("$$$1a"))
+                
         );
     }
 
